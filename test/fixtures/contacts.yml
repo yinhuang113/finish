@@ -1,0 +1,75 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  npoc: false
+  manager: false
+  portal_password: MyString
+  portal_security_level: 1
+  firstname: MyString
+  lastname: MyString
+  title: MyString
+  department: MyString
+  contact_type: MyString
+  direct_phone: MyString
+  contact_extension: MyString
+  mobile_phone: MyString
+  home_phone: MyString
+  emergency_phone: MyString
+  direct_fax: MyString
+  work_email_primary: MyString
+  work_email_secondary: MyString
+  work_email_tertiary: MyString
+  work_email_primary: MyString
+  work_email_secondary: 
+  description: MyText
+  cost: MyString
+  price: MyString
+  manufacture: MyString
+  manufacture_part: MyString
+  serial_numbers: MyString
+  vendor_perferred: MyString
+  vendor_other: MyString
+  type: 
+  units: MyString
+  tax: MyString
+  stock_on_hand: MyString
+  stock_location: MyString
+  references_recent_orders: MyString
+  references_companies_who_own: MyString
+
+two:
+  npoc: false
+  manager: false
+  portal_password: MyString
+  portal_security_level: 1
+  firstname: MyString
+  lastname: MyString
+  title: MyString
+  department: MyString
+  contact_type: MyString
+  direct_phone: MyString
+  contact_extension: MyString
+  mobile_phone: MyString
+  home_phone: MyString
+  emergency_phone: MyString
+  direct_fax: MyString
+  work_email_primary: MyString
+  work_email_secondary: MyString
+  work_email_tertiary: MyString
+  work_email_primary: MyString
+  work_email_secondary: 
+  description: MyText
+  cost: MyString
+  price: MyString
+  manufacture: MyString
+  manufacture_part: MyString
+  serial_numbers: MyString
+  vendor_perferred: MyString
+  vendor_other: MyString
+  type: 
+  units: MyString
+  tax: MyString
+  stock_on_hand: MyString
+  stock_location: MyString
+  references_recent_orders: MyString
+  references_companies_who_own: MyString

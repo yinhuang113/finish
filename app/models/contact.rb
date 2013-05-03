@@ -1,0 +1,3 @@
+class Contact < ActiveRecord::Base
+  attr_accessible :contact_extension, :contact_type, :cost, :department, :description, :direct_fax, :direct_phone, :emergency_phone, :firstname, :home_phone, :lastname, :manager, :manufacture, :manufacture_part, :mobile_phone, :npoc, :portal_password, :portal_security_level, :price, :references_companies_who_own, :references_recent_orders, :serial_numbers, :stock_location, :stock_on_hand, :tax, :title, :type, :units, :vendor_other, :vendor_perferred, :work_email_primary, :work_email_primary, :work_email_secondary, :work_email_secondary, :work_email_tertiary
+end

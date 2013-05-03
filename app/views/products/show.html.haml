@@ -1,54 +1,55 @@
-%p#notice= notice
-
-%p
-  %b Name:
-  = @product.name
-%p
-  %b Description:
-  = @product.description
-%p
-  %b Cost:
-  = @product.cost
-%p
-  %b Price:
-  = @product.price
-%p
-  %b Manufacture:
-  = @product.manufacture
-%p
-  %b Manufacture part:
-  = @product.manufacture_part
-%p
-  %b Serial numbers:
-  = @product.serial_numbers
-%p
-  %b Vendor perferred:
-  = @product.vendor_perferred
-%p
-  %b Vendor other:
-  = @product.vendor_other
-%p
-  %b Type:
-  = @product.type
-%p
-  %b Units:
-  = @product.units
-%p
-  %b Tax:
-  = @product.tax
-%p
-  %b Stock on hand:
-  = @product.stock_on_hand
-%p
-  %b Stock location:
-  = @product.stock_location
-%p
-  %b References recent orders:
-  = @product.references_recent_orders
-%p
-  %b References companies who own:
-  = @product.references_companies_who_own
-
-= link_to 'Edit', edit_product_path(@product)
-\|
-= link_to 'Back', products_path
+.edit_user.show_user
+  %p#notice= notice
+  
+  %p
+    %b Name:
+    = @product.name
+  %p
+    %b Description:
+    = @product.description
+  %p
+    %b Cost:
+    = @product.cost
+  %p
+    %b Price:
+    = @product.price
+  %p
+    %b Manufacture:
+    = @product.manufacture
+  %p
+    %b Manufacture part:
+    = @product.manufacture_part
+  %p
+    %b Serial numbers:
+    = @product.serial_numbers
+  %p
+    %b Vendor perferred:
+    = @product.vendor_perferred
+  %p
+    %b Vendor other:
+    = @product.vendor_other
+  %p
+    %b Type:
+    = @product.type
+  %p
+    %b Units:
+    = @product.units
+  %p
+    %b Tax:
+    = @product.tax
+  %p
+    %b Stock on hand:
+    = @product.stock_on_hand
+  %p
+    %b Stock location:
+    = @product.stock_location
+  %p
+    %b References recent orders:
+    = @product.references_recent_orders
+  %p
+    %b References companies who own:
+    = @product.references_companies_who_own
+  
+  = link_to 'Edit', edit_product_path(@product)
+  \|
+  = link_to 'Back', products_path

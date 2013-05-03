@@ -1,101 +1,102 @@
-%h1 Listing projects
-
-%table
-  %tr
-    %th Company
-    %th Approver
-    %th Phone
-    %th Extension
-    %th Site city
-    %th Site zip
-    %th Site phone
-    %th Start date
-    %th End date
-    %th Status
-    %th Type
-    %th Project manager
-    %th Budgeted hours
-    %th Budgeted expenses
-    %th Description
-    %th Notes
-    %th Tasks
-    %th Resources name
-    %th Resources role
-    %th Schedule
-    %th Products name
-    %th Products cost
-    %th Products price
-    %th Products purchase order
-    %th Products bin
-    %th Account manager
-    %th Open issues
-    %th Time entry standard
-    %th Time entry completed
-    %th Expenses
-    %th Phone logs
-    %th Documents
-    %th Survery results
-    %th Knowledgebase articles
-    %th Phases
-    %th Billing method terms
-    %th Billing method approver
-    %th Downpayment info amount
-    %th Downpayment info breakdown
-    %th Downpayment info invoice
-    %th Downpayment info datepaid
-    %th Invoices
-    %th
-    %th
-    %th
-
-  - @projects.each do |project|
+.list_user   
+  %h2 Listing projects
+  
+  %table
     %tr
-      %td= project.company_id
-      %td= project.approver
-      %td= project.phone
-      %td= project.extension
-      %td= project.site_city
-      %td= project.site_zip
-      %td= project.site_phone
-      %td= project.start_date
-      %td= project.end_date
-      %td= project.status
-      %td= project.type
-      %td= project.project_manager
-      %td= project.budgeted_hours
-      %td= project.budgeted_expenses
-      %td= project.description
-      %td= project.notes
-      %td= project.tasks
-      %td= project.resources_name
-      %td= project.resources_role
-      %td= project.schedule
-      %td= project.products_name
-      %td= project.products_cost
-      %td= project.products_price
-      %td= project.products_purchase_order
-      %td= project.products_bin
-      %td= project.account_manager
-      %td= project.open_issues
-      %td= project.time_entry_standard
-      %td= project.time_entry_completed
-      %td= project.expenses
-      %td= project.phone_logs
-      %td= project.documents
-      %td= project.survery_results
-      %td= project.knowledgebase_articles
-      %td= project.phases
-      %td= project.billing_method_terms
-      %td= project.billing_method_approver
-      %td= project.downpayment_info_amount
-      %td= project.downpayment_info_breakdown
-      %td= project.downpayment_info_invoice
-      %td= project.downpayment_info_datepaid
-      %td= project.invoices
-      %td= link_to 'Show', project
-      %td= link_to 'Edit', edit_project_path(project)
-      %td= link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Project', new_project_path
+      %th Company
+      %th Approver
+      %th Phone
+      %th Extension
+      %th Site city
+      %th Site zip
+      %th Site phone
+      %th Start date
+      %th End date
+      %th Status
+      %th Type
+      %th Project manager
+      %th Budgeted hours
+      %th Budgeted expenses
+      %th Description
+      %th Notes
+      %th Tasks
+      %th Resources name
+      %th Resources role
+      %th Schedule
+      %th Products name
+      %th Products cost
+      %th Products price
+      %th Products purchase order
+      %th Products bin
+      %th Account manager
+      %th Open issues
+      %th Time entry standard
+      %th Time entry completed
+      %th Expenses
+      %th Phone logs
+      %th Documents
+      %th Survery results
+      %th Knowledgebase articles
+      %th Phases
+      %th Billing method terms
+      %th Billing method approver
+      %th Downpayment info amount
+      %th Downpayment info breakdown
+      %th Downpayment info invoice
+      %th Downpayment info datepaid
+      %th Invoices
+      %th
+      %th
+      %th
+  
+    - @projects.each do |project|
+      %tr
+        %td= project.company_id
+        %td= project.approver
+        %td= project.phone
+        %td= project.extension
+        %td= project.site_city
+        %td= project.site_zip
+        %td= project.site_phone
+        %td= project.start_date
+        %td= project.end_date
+        %td= project.status
+        %td= project.type
+        %td= project.project_manager
+        %td= project.budgeted_hours
+        %td= project.budgeted_expenses
+        %td= project.description
+        %td= project.notes
+        %td= project.tasks
+        %td= project.resources_name
+        %td= project.resources_role
+        %td= project.schedule
+        %td= project.products_name
+        %td= project.products_cost
+        %td= project.products_price
+        %td= project.products_purchase_order
+        %td= project.products_bin
+        %td= project.account_manager
+        %td= project.open_issues
+        %td= project.time_entry_standard
+        %td= project.time_entry_completed
+        %td= project.expenses
+        %td= project.phone_logs
+        %td= project.documents
+        %td= project.survery_results
+        %td= project.knowledgebase_articles
+        %td= project.phases
+        %td= project.billing_method_terms
+        %td= project.billing_method_approver
+        %td= project.downpayment_info_amount
+        %td= project.downpayment_info_breakdown
+        %td= project.downpayment_info_invoice
+        %td= project.downpayment_info_datepaid
+        %td= project.invoices
+        %td= link_to 'Show', project
+        %td= link_to 'Edit', edit_project_path(project)
+        %td= link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' }
+  
+  %br
+  
+  = link_to 'New Project', new_project_path

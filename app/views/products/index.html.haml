@@ -1,49 +1,50 @@
-%h1 Listing products
-
-%table
-  %tr
-    %th Name
-    %th Description
-    %th Cost
-    %th Price
-    %th Manufacture
-    %th Manufacture part
-    %th Serial numbers
-    %th Vendor perferred
-    %th Vendor other
-    %th Type
-    %th Units
-    %th Tax
-    %th Stock on hand
-    %th Stock location
-    %th References recent orders
-    %th References companies who own
-    %th
-    %th
-    %th
-
-  - @products.each do |product|
+.list_user   
+  %h2 Listing products
+  
+  %table
     %tr
-      %td= product.name
-      %td= product.description
-      %td= product.cost
-      %td= product.price
-      %td= product.manufacture
-      %td= product.manufacture_part
-      %td= product.serial_numbers
-      %td= product.vendor_perferred
-      %td= product.vendor_other
-      %td= product.type
-      %td= product.units
-      %td= product.tax
-      %td= product.stock_on_hand
-      %td= product.stock_location
-      %td= product.references_recent_orders
-      %td= product.references_companies_who_own
-      %td= link_to 'Show', product
-      %td= link_to 'Edit', edit_product_path(product)
-      %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Product', new_product_path
+      %th Name
+      %th Description
+      %th Cost
+      %th Price
+      %th Manufacture
+      %th Manufacture part
+      %th Serial numbers
+      %th Vendor perferred
+      %th Vendor other
+      %th Type
+      %th Units
+      %th Tax
+      %th Stock on hand
+      %th Stock location
+      %th References recent orders
+      %th References companies who own
+      %th
+      %th
+      %th
+  
+    - @products.each do |product|
+      %tr
+        %td= product.name
+        %td= product.description
+        %td= product.cost
+        %td= product.price
+        %td= product.manufacture
+        %td= product.manufacture_part
+        %td= product.serial_numbers
+        %td= product.vendor_perferred
+        %td= product.vendor_other
+        %td= product.type
+        %td= product.units
+        %td= product.tax
+        %td= product.stock_on_hand
+        %td= product.stock_location
+        %td= product.references_recent_orders
+        %td= product.references_companies_who_own
+        %td= link_to 'Show', product
+        %td= link_to 'Edit', edit_product_path(product)
+        %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }
+  
+  %br
+  
+  = link_to 'New Product', new_product_path

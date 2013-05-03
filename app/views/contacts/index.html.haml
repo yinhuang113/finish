@@ -1,0 +1,87 @@
+%h1 Listing contacts
+
+%table
+  %tr
+    %th Npoc
+    %th Manager
+    %th Portal password
+    %th Portal security level
+    %th Firstname
+    %th Lastname
+    %th Title
+    %th Department
+    %th Contact type
+    %th Direct phone
+    %th Contact extension
+    %th Mobile phone
+    %th Home phone
+    %th Emergency phone
+    %th Direct fax
+    %th Work email primary
+    %th Work email secondary
+    %th Work email tertiary
+    %th Work email primary
+    %th Work email secondary
+    %th Description
+    %th Cost
+    %th Price
+    %th Manufacture
+    %th Manufacture part
+    %th Serial numbers
+    %th Vendor perferred
+    %th Vendor other
+    %th Type
+    %th Units
+    %th Tax
+    %th Stock on hand
+    %th Stock location
+    %th References recent orders
+    %th References companies who own
+    %th
+    %th
+    %th
+
+  - @contacts.each do |contact|
+    %tr
+      %td= contact.npoc
+      %td= contact.manager
+      %td= contact.portal_password
+      %td= contact.portal_security_level
+      %td= contact.firstname
+      %td= contact.lastname
+      %td= contact.title
+      %td= contact.department
+      %td= contact.contact_type
+      %td= contact.direct_phone
+      %td= contact.contact_extension
+      %td= contact.mobile_phone
+      %td= contact.home_phone
+      %td= contact.emergency_phone
+      %td= contact.direct_fax
+      %td= contact.work_email_primary
+      %td= contact.work_email_secondary
+      %td= contact.work_email_tertiary
+      %td= contact.work_email_primary
+      %td= contact.work_email_secondary
+      %td= contact.description
+      %td= contact.cost
+      %td= contact.price
+      %td= contact.manufacture
+      %td= contact.manufacture_part
+      %td= contact.serial_numbers
+      %td= contact.vendor_perferred
+      %td= contact.vendor_other
+      %td= contact.type
+      %td= contact.units
+      %td= contact.tax
+      %td= contact.stock_on_hand
+      %td= contact.stock_location
+      %td= contact.references_recent_orders
+      %td= contact.references_companies_who_own
+      %td= link_to 'Show', contact
+      %td= link_to 'Edit', edit_contact_path(contact)
+      %td= link_to 'Destroy', contact, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Contact', new_contact_path
