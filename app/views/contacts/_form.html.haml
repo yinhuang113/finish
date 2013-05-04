@@ -7,8 +7,8 @@
           %li= msg
 
   .field
-    = f.label :npoc
-    = f.check_box :npoc
+    = f.label :ppoc
+    = f.check_box :ppoc
   .field
     = f.label :manager
     = f.check_box :manager
@@ -31,8 +31,8 @@
     = f.label :department
     = f.text_field :department
   .field
-    = f.label :contact_type
-    = f.text_field :contact_type
+    = f.label :cotact_type
+    = f.text_field :cotact_type
   .field
     = f.label :direct_phone
     = f.text_field :direct_phone
@@ -61,55 +61,190 @@
     = f.label :work_email_tertiary
     = f.text_field :work_email_tertiary
   .field
-    = f.label :work_email_primary
-    = f.text_field :work_email_primary
+    = f.label :personal_email_primary
+    = f.text_field :personal_email_primary
   .field
-    = f.label :work_email_secondary
-    = f.text_field :work_email_secondary
+    = f.label :personal_email_secondary
+    = f.text_field :personal_email_secondary
   .field
-    = f.label :description
-    = f.text_area :description
+    = f.label :personal_email_tertiary
+    = f.text_field :personal_email_tertiary
   .field
-    = f.label :cost
-    = f.text_field :cost
+    = f.label :reports_to
+    = f.text_field :reports_to
   .field
-    = f.label :price
-    = f.text_field :price
+    = f.label :primary_site
+    = f.text_field :primary_site
   .field
-    = f.label :manufacture
-    = f.text_field :manufacture
+    = f.label :active_inactive
+    = f.check_box :active_inactive
   .field
-    = f.label :manufacture_part
-    = f.text_field :manufacture_part
+    = f.label :notes
+    = f.text_area :notes
   .field
-    = f.label :serial_numbers
-    = f.text_field :serial_numbers
+    = f.label :machine_id1
+    = f.text_field :machine_id1
   .field
-    = f.label :vendor_perferred
-    = f.text_field :vendor_perferred
+    = f.label :machine_id2
+    = f.text_field :machine_id2
   .field
-    = f.label :vendor_other
-    = f.text_field :vendor_other
+    = f.label :machine_id3
+    = f.text_field :machine_id3
   .field
-    = f.label :type
-    = f.text_field :type
+    = f.label :passwords
+    = f.text_field :passwords
   .field
-    = f.label :units
-    = f.text_field :units
+    = f.label :cell_phone_provider
+    = f.text_field :cell_phone_provider
   .field
-    = f.label :tax
-    = f.text_field :tax
+    = f.label :cell_phone_account_number
+    = f.text_field :cell_phone_account_number
   .field
-    = f.label :stock_on_hand
-    = f.text_field :stock_on_hand
+    = f.label :cell_phone_model
+    = f.text_field :cell_phone_model
   .field
-    = f.label :stock_location
-    = f.text_field :stock_location
+    = f.label :home_isp
+    = f.text_field :home_isp
   .field
-    = f.label :references_recent_orders
-    = f.text_field :references_recent_orders
+    = f.label :homeuestion_answer
+    = f.text_area :homeuestion_answer
   .field
-    = f.label :references_companies_who_own
-    = f.text_field :references_companies_who_own
+    = f.label :security_question_answer2
+    = f.text_area :security_question_answer2
+  .field
+    = f.label :secourtiy_question_answer3
+    = f.text_area :secourtiy_question_answer3
+  .field
+    = f.label :securtiy_question_answer4
+    = f.text_area :securtiy_question_answer4
+  .field
+    = f.label :security_question_answer5
+    = f.text_area :security_question_answer5
+  .field
+    = f.label :dvr_ip
+    = f.text_field :dvr_ip
+  .field
+    = f.label :dvr_username
+    = f.text_field :dvr_username
+  .field
+    = f.label :dvr_password
+    = f.text_field :dvr_password
+  .field
+    = f.label :dvr_url
+    = f.text_field :dvr_url
+  .field
+    = f.label :dvr_model
+    = f.text_field :dvr_model
+  .field
+    = f.label :vendor_profile
+    = f.text_field :vendor_profile
+  .field
+    = f.label :vendor_profile2
+    = f.text_field :vendor_profile2
+  .field
+    = f.label :vendor_profile3
+    = f.text_field :vendor_profile3
+  .field
+    = f.label :vendor_profile4
+    = f.text_field :vendor_profile4
+  .field
+    = f.label :vendor_profile5
+    = f.text_field :vendor_profile5
+  .field
+    = f.label :place_of_birth
+    = f.text_field :place_of_birth
+  .field
+    = f.label :mothers_maiden_name
+    = f.text_field :mothers_maiden_name
+  .field
+    = f.label :last_4_digits_of_social
+    = f.text_field :last_4_digits_of_social
+  .field
+    = f.label :pets_name
+    = f.text_field :pets_name
+  .field
+    = f.label :personal_credit_card
+    = f.text_field :personal_credit_card
+  .field
+    = f.label :nickname
+    = f.text_field :nickname
+  .field
+    = f.label :gender
+    = f.text_field :gender
+  .field
+    = f.label :college
+    = f.text_field :college
+  .field
+    = f.label :birthday
+    = f.datetime_select :birthday
+  .field
+    = f.label :married
+    = f.check_box :married
+  .field
+    = f.label :children
+    = f.check_box :children
+  .field
+    = f.label :child1
+    = f.text_area :child1
+  .field
+    = f.label :child2
+    = f.text_area :child2
+  .field
+    = f.label :significant_other
+    = f.text_field :significant_other
+  .field
+    = f.label :anniversary
+    = f.datetime_select :anniversary
+  .field
+    = f.label :photo
+    = f.text_field :photo
+  .field
+    = f.label :home_address1
+    = f.text_field :home_address1
+  .field
+    = f.label :home_address2
+    = f.text_field :home_address2
+  .field
+    = f.label :city
+    = f.text_field :city
+  .field
+    = f.label :state
+    = f.text_field :state
+  .field
+    = f.label :zip
+    = f.text_field :zip
+  .field
+    = f.label :country
+    = f.text_field :country
+  .field
+    = f.label :newsletter_opt_in
+    = f.check_box :newsletter_opt_in
+  .field
+    = f.label :facebook
+    = f.text_field :facebook
+  .field
+    = f.label :twitter
+    = f.text_field :twitter
+  .field
+    = f.label :linkedin
+    = f.text_field :linkedin
+  .field
+    = f.label :instagram
+    = f.text_field :instagram
+  .field
+    = f.label :personal_skype
+    = f.text_field :personal_skype
+  .field
+    = f.label :personal_gchat
+    = f.text_field :personal_gchat
+  .field
+    = f.label :personal_aim
+    = f.text_field :personal_aim
+  .field
+    = f.label :personal_msn
+    = f.text_field :personal_msn
+  .field
+    = f.label :personal_yahoo
+    = f.text_field :personal_yahoo
   .actions
     = f.submit 'Save'

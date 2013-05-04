@@ -1,4 +1,7 @@
 Finish::Application.routes.draw do
+  resources :companies
+
+
   resources :contacts
 
 
@@ -28,12 +31,6 @@ Finish::Application.routes.draw do
   get "static_pages/help"
 
   get "static_pages/home"
-
-  resources :tickets
-
-
-  resources :companies
-
 
   resources :users
 

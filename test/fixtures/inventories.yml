@@ -6,7 +6,7 @@ one:
   manufacture_part: MyString
   vendor_perferred: MyString
   vendor_other: MyString
-  type: 
+  inventory_type: MyString
   units: MyString
   tax: MyString
   stock_on_hand: MyString
@@ -22,7 +22,7 @@ two:
   manufacture_part: MyString
   vendor_perferred: MyString
   vendor_other: MyString
-  type: 
+  inventory_type: MyString
   units: MyString
   tax: MyString
   stock_on_hand: MyString

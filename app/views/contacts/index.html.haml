@@ -2,7 +2,7 @@
 
 %table
   %tr
-    %th Npoc
+    %th Ppoc
     %th Manager
     %th Portal password
     %th Portal security level
@@ -10,7 +10,7 @@
     %th Lastname
     %th Title
     %th Department
-    %th Contact type
+    %th Cotact type
     %th Direct phone
     %th Contact extension
     %th Mobile phone
@@ -20,30 +20,75 @@
     %th Work email primary
     %th Work email secondary
     %th Work email tertiary
-    %th Work email primary
-    %th Work email secondary
-    %th Description
-    %th Cost
-    %th Price
-    %th Manufacture
-    %th Manufacture part
-    %th Serial numbers
-    %th Vendor perferred
-    %th Vendor other
-    %th Type
-    %th Units
-    %th Tax
-    %th Stock on hand
-    %th Stock location
-    %th References recent orders
-    %th References companies who own
+    %th Personal email primary
+    %th Personal email secondary
+    %th Personal email tertiary
+    %th Reports to
+    %th Primary site
+    %th Active inactive
+    %th Notes
+    %th Machine id1
+    %th Machine id2
+    %th Machine id3
+    %th Passwords
+    %th Cell phone provider
+    %th Cell phone account number
+    %th Cell phone model
+    %th Home isp
+    %th Homeuestion answer
+    %th Security question answer2
+    %th Secourtiy question answer3
+    %th Securtiy question answer4
+    %th Security question answer5
+    %th Dvr ip
+    %th Dvr username
+    %th Dvr password
+    %th Dvr url
+    %th Dvr model
+    %th Vendor profile
+    %th Vendor profile2
+    %th Vendor profile3
+    %th Vendor profile4
+    %th Vendor profile5
+    %th Place of birth
+    %th Mothers maiden name
+    %th Last 4 digits of social
+    %th Pets name
+    %th Personal credit card
+    %th Nickname
+    %th Gender
+    %th College
+    %th Birthday
+    %th Married
+    %th Children
+    %th Child1
+    %th Child2
+    %th Significant other
+    %th Anniversary
+    %th Photo
+    %th Home address1
+    %th Home address2
+    %th City
+    %th State
+    %th Zip
+    %th Country
+    %th Newsletter opt in
+    %th Facebook
+    %th Twitter
+    %th Linkedin
+    %th Instagram
+    %th Personal skype
+    %th Personal gchat
+    %th Personal aim
+    %th Personal msn
+    %th Personal yahoo
     %th
     %th
     %th
 
   - @contacts.each do |contact|
     %tr
-      %td= contact.npoc
+      %td= contact.ppoc
       %td= contact.manager
       %td= contact.portal_password
       %td= contact.portal_security_level
@@ -51,7 +96,7 @@
       %td= contact.lastname
       %td= contact.title
       %td= contact.department
-      %td= contact.contact_type
+      %td= contact.cotact_type
       %td= contact.direct_phone
       %td= contact.contact_extension
       %td= contact.mobile_phone
@@ -61,23 +106,68 @@
       %td= contact.work_email_primary
       %td= contact.work_email_secondary
       %td= contact.work_email_tertiary
-      %td= contact.work_email_primary
-      %td= contact.work_email_secondary
-      %td= contact.description
-      %td= contact.cost
-      %td= contact.price
-      %td= contact.manufacture
-      %td= contact.manufacture_part
-      %td= contact.serial_numbers
-      %td= contact.vendor_perferred
-      %td= contact.vendor_other
-      %td= contact.type
-      %td= contact.units
-      %td= contact.tax
-      %td= contact.stock_on_hand
-      %td= contact.stock_location
-      %td= contact.references_recent_orders
-      %td= contact.references_companies_who_own
+      %td= contact.personal_email_primary
+      %td= contact.personal_email_secondary
+      %td= contact.personal_email_tertiary
+      %td= contact.reports_to
+      %td= contact.primary_site
+      %td= contact.active_inactive
+      %td= contact.notes
+      %td= contact.machine_id1
+      %td= contact.machine_id2
+      %td= contact.machine_id3
+      %td= contact.passwords
+      %td= contact.cell_phone_provider
+      %td= contact.cell_phone_account_number
+      %td= contact.cell_phone_model
+      %td= contact.home_isp
+      %td= contact.homeuestion_answer
+      %td= contact.security_question_answer2
+      %td= contact.secourtiy_question_answer3
+      %td= contact.securtiy_question_answer4
+      %td= contact.security_question_answer5
+      %td= contact.dvr_ip
+      %td= contact.dvr_username
+      %td= contact.dvr_password
+      %td= contact.dvr_url
+      %td= contact.dvr_model
+      %td= contact.vendor_profile
+      %td= contact.vendor_profile2
+      %td= contact.vendor_profile3
+      %td= contact.vendor_profile4
+      %td= contact.vendor_profile5
+      %td= contact.place_of_birth
+      %td= contact.mothers_maiden_name
+      %td= contact.last_4_digits_of_social
+      %td= contact.pets_name
+      %td= contact.personal_credit_card
+      %td= contact.nickname
+      %td= contact.gender
+      %td= contact.college
+      %td= contact.birthday
+      %td= contact.married
+      %td= contact.children
+      %td= contact.child1
+      %td= contact.child2
+      %td= contact.significant_other
+      %td= contact.anniversary
+      %td= contact.photo
+      %td= contact.home_address1
+      %td= contact.home_address2
+      %td= contact.city
+      %td= contact.state
+      %td= contact.zip
+      %td= contact.country
+      %td= contact.newsletter_opt_in
+      %td= contact.facebook
+      %td= contact.twitter
+      %td= contact.linkedin
+      %td= contact.instagram
+      %td= contact.personal_skype
+      %td= contact.personal_gchat
+      %td= contact.personal_aim
+      %td= contact.personal_msn
+      %td= contact.personal_yahoo
       %td= link_to 'Show', contact
       %td= link_to 'Edit', edit_contact_path(contact)
       %td= link_to 'Destroy', contact, :method => :delete, :data => { :confirm => 'Are you sure?' }

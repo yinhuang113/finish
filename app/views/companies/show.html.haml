@@ -1,0 +1,228 @@
+%p#notice= notice
+
+%p
+  %b Owner:
+  = @company.owner_id
+%p
+  %b Company rec:
+  = @company.company_rec_id
+%p
+  %b Company:
+  = @company.company_id
+%p
+  %b Company name:
+  = @company.company_name
+%p
+  %b Phone nbr:
+  = @company.phone_nbr
+%p
+  %b Phone nbr fax:
+  = @company.phone_nbr_fax
+%p
+  %b Website url:
+  = @company.website_url
+%p
+  %b Keywords:
+  = @company.keywords
+%p
+  %b Accound nbr:
+  = @company.accound_nbr
+%p
+  %b Currency:
+  = @company.currency_id
+%p
+  %b Time zone rec:
+  = @company.time_zone_rec_id
+%p
+  %b Sic code:
+  = @company.sic_code_id
+%p
+  %b Remit to rec:
+  = @company.remit_to_rec_id
+%p
+  %b Exchange flag:
+  = @company.exchange_flag
+%p
+  %b Last update:
+  = @company.last_update
+%p
+  %b Updated by:
+  = @company.updated_by
+%p
+  %b Company type rec:
+  = @company.company_type_rec_id
+%p
+  %b Company status rec:
+  = @company.company_status_rec_id
+%p
+  %b Tax code rec:
+  = @company.tax_code_rec_id
+%p
+  %b Currency rec:
+  = @company.currency_rec_id
+%p
+  %b Owner level rec:
+  = @company.owner_level_rec_id
+%p
+  %b Billable flag:
+  = @company.billable_flag
+%p
+  %b Userfield 1:
+  = @company.userfield_1
+%p
+  %b Userfield 2:
+  = @company.userfield_2
+%p
+  %b Userfield 3:
+  = @company.userfield_3
+%p
+  %b Userfield 4:
+  = @company.userfield_4
+%p
+  %b Userfield 5:
+  = @company.userfield_5
+%p
+  %b Userfield 6:
+  = @company.userfield_6
+%p
+  %b Userfield 7:
+  = @company.userfield_7
+%p
+  %b Userfield 8:
+  = @company.userfield_8
+%p
+  %b Userfield 9:
+  = @company.userfield_9
+%p
+  %b Userfield 10:
+  = @company.userfield_10
+%p
+  %b Delet flag:
+  = @company.delet_flag
+%p
+  %b Date deleted:
+  = @company.date_deleted
+%p
+  %b Deleted by:
+  = @company.deleted_by
+%p
+  %b Market rec:
+  = @company.market_rec_id
+%p
+  %b Br option:
+  = @company.br_option
+%p
+  %b Lead flag:
+  = @company.lead_flag
+%p
+  %b Lead source:
+  = @company.lead_source
+%p
+  %b Parent company rec:
+  = @company.parent_company_rec_id
+%p
+  %b Annual revenue:
+  = @company.annual_revenue
+%p
+  %b Revenue year:
+  = @company.revenue_year
+%p
+  %b Nbr employees:
+  = @company.nbr_employees
+%p
+  %b Ownership type rec:
+  = @company.ownership_type_rec_id
+%p
+  %b Date entered:
+  = @company.date_entered
+%p
+  %b Billing terms rec:
+  = @company.billing_terms_rec_id
+%p
+  %b Billing delivery rec:
+  = @company.billing_delivery_rec_id
+%p
+  %b Cm password:
+  = @company.cm_password
+%p
+  %b Ref contact rec:
+  = @company.ref_contact_rec_id
+%p
+  %b Ref member rec:
+  = @company.ref_member_rec_id
+%p
+  %b Ref other:
+  = @company.ref_other
+%p
+  %b Internal flag:
+  = @company.internal_flag
+%p
+  %b Exchange guid:
+  = @company.exchange_guid
+%p
+  %b Sr notify:
+  = @company.sr_notify
+%p
+  %b Auto assign flag:
+  = @company.auto_assign_flag
+%p
+  %b Sr signoff rec:
+  = @company.sr_signoff_rec_id
+%p
+  %b Nosurvey flag:
+  = @company.nosurvey_flag
+%p
+  %b Bi inv template rec:
+  = @company.bi_inv_template_rec_id
+%p
+  %b Bill override flag:
+  = @company.bill_override_flag
+%p
+  %b Bill sr flag:
+  = @company.bill_sr_flag
+%p
+  %b Bill complete sr flag:
+  = @company.bill_complete_sr_flag
+%p
+  %b Bill unapproved sr flag:
+  = @company.bill_unapproved_sr_flag
+%p
+  %b Bill complete pm flag:
+  = @company.bill_complete_pm_flag
+%p
+  %b Bill restrict down payment pm flag:
+  = @company.bill_restrict_down_payment_pm_flag
+%p
+  %b Approval flag:
+  = @company.approval_flag
+%p
+  %b Tax:
+  = @company.tax_id
+%p
+  %b Exchange href:
+  = @company.exchange_href
+%p
+  %b Date acquired:
+  = @company.date_acquired
+%p
+  %b Unsubscribe flag:
+  = @company.unsubscribe_flag
+%p
+  %b Vender nbr:
+  = @company.vender_nbr
+%p
+  %b Iv price header rec:
+  = @company.iv_price_header_rec_id
+%p
+  %b Email cc flag:
+  = @company.email_cc_flag
+%p
+  %b Email cc address:
+  = @company.email_cc_address
+%p
+  %b Mobile guid:
+  = @company.mobile_guid
+
+= link_to 'Edit', edit_company_path(@company)
+\|
+= link_to 'Back', companies_path

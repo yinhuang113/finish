@@ -1,0 +1,165 @@
+%h1 Listing companies
+
+%table
+  %tr
+    %th Owner
+    %th Company rec
+    %th Company
+    %th Company name
+    %th Phone nbr
+    %th Phone nbr fax
+    %th Website url
+    %th Keywords
+    %th Accound nbr
+    %th Currency
+    %th Time zone rec
+    %th Sic code
+    %th Remit to rec
+    %th Exchange flag
+    %th Last update
+    %th Updated by
+    %th Company type rec
+    %th Company status rec
+    %th Tax code rec
+    %th Currency rec
+    %th Owner level rec
+    %th Billable flag
+    %th Userfield 1
+    %th Userfield 2
+    %th Userfield 3
+    %th Userfield 4
+    %th Userfield 5
+    %th Userfield 6
+    %th Userfield 7
+    %th Userfield 8
+    %th Userfield 9
+    %th Userfield 10
+    %th Delet flag
+    %th Date deleted
+    %th Deleted by
+    %th Market rec
+    %th Br option
+    %th Lead flag
+    %th Lead source
+    %th Parent company rec
+    %th Annual revenue
+    %th Revenue year
+    %th Nbr employees
+    %th Ownership type rec
+    %th Date entered
+    %th Billing terms rec
+    %th Billing delivery rec
+    %th Cm password
+    %th Ref contact rec
+    %th Ref member rec
+    %th Ref other
+    %th Internal flag
+    %th Exchange guid
+    %th Sr notify
+    %th Auto assign flag
+    %th Sr signoff rec
+    %th Nosurvey flag
+    %th Bi inv template rec
+    %th Bill override flag
+    %th Bill sr flag
+    %th Bill complete sr flag
+    %th Bill unapproved sr flag
+    %th Bill complete pm flag
+    %th Bill restrict down payment pm flag
+    %th Approval flag
+    %th Tax
+    %th Exchange href
+    %th Date acquired
+    %th Unsubscribe flag
+    %th Vender nbr
+    %th Iv price header rec
+    %th Email cc flag
+    %th Email cc address
+    %th Mobile guid
+    %th
+    %th
+    %th
+
+  - @companies.each do |company|
+    %tr
+      %td= company.owner_id
+      %td= company.company_rec_id
+      %td= company.company_id
+      %td= company.company_name
+      %td= company.phone_nbr
+      %td= company.phone_nbr_fax
+      %td= company.website_url
+      %td= company.keywords
+      %td= company.accound_nbr
+      %td= company.currency_id
+      %td= company.time_zone_rec_id
+      %td= company.sic_code_id
+      %td= company.remit_to_rec_id
+      %td= company.exchange_flag
+      %td= company.last_update
+      %td= company.updated_by
+      %td= company.company_type_rec_id
+      %td= company.company_status_rec_id
+      %td= company.tax_code_rec_id
+      %td= company.currency_rec_id
+      %td= company.owner_level_rec_id
+      %td= company.billable_flag
+      %td= company.userfield_1
+      %td= company.userfield_2
+      %td= company.userfield_3
+      %td= company.userfield_4
+      %td= company.userfield_5
+      %td= company.userfield_6
+      %td= company.userfield_7
+      %td= company.userfield_8
+      %td= company.userfield_9
+      %td= company.userfield_10
+      %td= company.delet_flag
+      %td= company.date_deleted
+      %td= company.deleted_by
+      %td= company.market_rec_id
+      %td= company.br_option
+      %td= company.lead_flag
+      %td= company.lead_source
+      %td= company.parent_company_rec_id
+      %td= company.annual_revenue
+      %td= company.revenue_year
+      %td= company.nbr_employees
+      %td= company.ownership_type_rec_id
+      %td= company.date_entered
+      %td= company.billing_terms_rec_id
+      %td= company.billing_delivery_rec_id
+      %td= company.cm_password
+      %td= company.ref_contact_rec_id
+      %td= company.ref_member_rec_id
+      %td= company.ref_other
+      %td= company.internal_flag
+      %td= company.exchange_guid
+      %td= company.sr_notify
+      %td= company.auto_assign_flag
+      %td= company.sr_signoff_rec_id
+      %td= company.nosurvey_flag
+      %td= company.bi_inv_template_rec_id
+      %td= company.bill_override_flag
+      %td= company.bill_sr_flag
+      %td= company.bill_complete_sr_flag
+      %td= company.bill_unapproved_sr_flag
+      %td= company.bill_complete_pm_flag
+      %td= company.bill_restrict_down_payment_pm_flag
+      %td= company.approval_flag
+      %td= company.tax_id
+      %td= company.exchange_href
+      %td= company.date_acquired
+      %td= company.unsubscribe_flag
+      %td= company.vender_nbr
+      %td= company.iv_price_header_rec_id
+      %td= company.email_cc_flag
+      %td= company.email_cc_address
+      %td= company.mobile_guid
+      %td= link_to 'Show', company
+      %td= link_to 'Edit', edit_company_path(company)
+      %td= link_to 'Destroy', company, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Company', new_company_path

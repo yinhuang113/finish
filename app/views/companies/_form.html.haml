@@ -1,0 +1,232 @@
+= form_for @company do |f|
+  - if @company.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@company.errors.count, "error")} prohibited this company from being saved:"
+      %ul
+        - @company.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :owner_id
+    = f.number_field :owner_id
+  .field
+    = f.label :company_rec_id
+    = f.number_field :company_rec_id
+  .field
+    = f.label :company_id
+    = f.text_field :company_id
+  .field
+    = f.label :company_name
+    = f.text_field :company_name
+  .field
+    = f.label :phone_nbr
+    = f.text_field :phone_nbr
+  .field
+    = f.label :phone_nbr_fax
+    = f.text_field :phone_nbr_fax
+  .field
+    = f.label :website_url
+    = f.text_field :website_url
+  .field
+    = f.label :keywords
+    = f.text_field :keywords
+  .field
+    = f.label :accound_nbr
+    = f.text_field :accound_nbr
+  .field
+    = f.label :currency_id
+    = f.text_field :currency_id
+  .field
+    = f.label :time_zone_rec_id
+    = f.number_field :time_zone_rec_id
+  .field
+    = f.label :sic_code_id
+    = f.text_field :sic_code_id
+  .field
+    = f.label :remit_to_rec_id
+    = f.number_field :remit_to_rec_id
+  .field
+    = f.label :exchange_flag
+    = f.check_box :exchange_flag
+  .field
+    = f.label :last_update
+    = f.datetime_select :last_update
+  .field
+    = f.label :updated_by
+    = f.text_field :updated_by
+  .field
+    = f.label :company_type_rec_id
+    = f.number_field :company_type_rec_id
+  .field
+    = f.label :company_status_rec_id
+    = f.number_field :company_status_rec_id
+  .field
+    = f.label :tax_code_rec_id
+    = f.number_field :tax_code_rec_id
+  .field
+    = f.label :currency_rec_id
+    = f.number_field :currency_rec_id
+  .field
+    = f.label :owner_level_rec_id
+    = f.number_field :owner_level_rec_id
+  .field
+    = f.label :billable_flag
+    = f.check_box :billable_flag
+  .field
+    = f.label :userfield_1
+    = f.text_field :userfield_1
+  .field
+    = f.label :userfield_2
+    = f.text_field :userfield_2
+  .field
+    = f.label :userfield_3
+    = f.text_field :userfield_3
+  .field
+    = f.label :userfield_4
+    = f.text_field :userfield_4
+  .field
+    = f.label :userfield_5
+    = f.text_field :userfield_5
+  .field
+    = f.label :userfield_6
+    = f.text_field :userfield_6
+  .field
+    = f.label :userfield_7
+    = f.text_field :userfield_7
+  .field
+    = f.label :userfield_8
+    = f.text_field :userfield_8
+  .field
+    = f.label :userfield_9
+    = f.text_field :userfield_9
+  .field
+    = f.label :userfield_10
+    = f.text_field :userfield_10
+  .field
+    = f.label :delet_flag
+    = f.check_box :delet_flag
+  .field
+    = f.label :date_deleted
+    = f.datetime_select :date_deleted
+  .field
+    = f.label :deleted_by
+    = f.text_field :deleted_by
+  .field
+    = f.label :market_rec_id
+    = f.number_field :market_rec_id
+  .field
+    = f.label :br_option
+    = f.text_field :br_option
+  .field
+    = f.label :lead_flag
+    = f.check_box :lead_flag
+  .field
+    = f.label :lead_source
+    = f.text_field :lead_source
+  .field
+    = f.label :parent_company_rec_id
+    = f.number_field :parent_company_rec_id
+  .field
+    = f.label :annual_revenue
+    = f.text_field :annual_revenue
+  .field
+    = f.label :revenue_year
+    = f.number_field :revenue_year
+  .field
+    = f.label :nbr_employees
+    = f.number_field :nbr_employees
+  .field
+    = f.label :ownership_type_rec_id
+    = f.number_field :ownership_type_rec_id
+  .field
+    = f.label :date_entered
+    = f.datetime_select :date_entered
+  .field
+    = f.label :billing_terms_rec_id
+    = f.number_field :billing_terms_rec_id
+  .field
+    = f.label :billing_delivery_rec_id
+    = f.number_field :billing_delivery_rec_id
+  .field
+    = f.label :cm_password
+    = f.text_field :cm_password
+  .field
+    = f.label :ref_contact_rec_id
+    = f.number_field :ref_contact_rec_id
+  .field
+    = f.label :ref_member_rec_id
+    = f.number_field :ref_member_rec_id
+  .field
+    = f.label :ref_other
+    = f.text_field :ref_other
+  .field
+    = f.label :internal_flag
+    = f.check_box :internal_flag
+  .field
+    = f.label :exchange_guid
+    = f.text_field :exchange_guid
+  .field
+    = f.label :sr_notify
+    = f.text_field :sr_notify
+  .field
+    = f.label :auto_assign_flag
+    = f.check_box :auto_assign_flag
+  .field
+    = f.label :sr_signoff_rec_id
+    = f.number_field :sr_signoff_rec_id
+  .field
+    = f.label :nosurvey_flag
+    = f.check_box :nosurvey_flag
+  .field
+    = f.label :bi_inv_template_rec_id
+    = f.number_field :bi_inv_template_rec_id
+  .field
+    = f.label :bill_override_flag
+    = f.check_box :bill_override_flag
+  .field
+    = f.label :bill_sr_flag
+    = f.check_box :bill_sr_flag
+  .field
+    = f.label :bill_complete_sr_flag
+    = f.check_box :bill_complete_sr_flag
+  .field
+    = f.label :bill_unapproved_sr_flag
+    = f.check_box :bill_unapproved_sr_flag
+  .field
+    = f.label :bill_complete_pm_flag
+    = f.check_box :bill_complete_pm_flag
+  .field
+    = f.label :bill_restrict_down_payment_pm_flag
+    = f.check_box :bill_restrict_down_payment_pm_flag
+  .field
+    = f.label :approval_flag
+    = f.check_box :approval_flag
+  .field
+    = f.label :tax_id
+    = f.text_field :tax_id
+  .field
+    = f.label :exchange_href
+    = f.text_field :exchange_href
+  .field
+    = f.label :date_acquired
+    = f.datetime_select :date_acquired
+  .field
+    = f.label :unsubscribe_flag
+    = f.check_box :unsubscribe_flag
+  .field
+    = f.label :vender_nbr
+    = f.text_field :vender_nbr
+  .field
+    = f.label :iv_price_header_rec_id
+    = f.number_field :iv_price_header_rec_id
+  .field
+    = f.label :email_cc_flag
+    = f.check_box :email_cc_flag
+  .field
+    = f.label :email_cc_address
+    = f.text_field :email_cc_address
+  .field
+    = f.label :mobile_guid
+    = f.text_field :mobile_guid
+  .actions
+    = f.submit 'Save'

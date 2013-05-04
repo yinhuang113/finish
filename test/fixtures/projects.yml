@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  company_id: 1
+  company: MyString
   approver: MyString
   phone: MyString
-  extension: MyString
+  project_extension: MyString
   site_city: MyString
   site_zip: MyString
   site_phone: MyString
-  start_date: 2013-04-27 22:26:49
-  end_date: 2013-04-27 22:26:49
+  start_date: 2013-05-03 23:13:18
+  end_date: 2013-05-03 23:13:18
   status: false
-  type: 
+  project_type: MyString
   project_manager: MyString
   budgeted_hours: MyString
   budgeted_expenses: MyString
@@ -45,17 +45,17 @@ one:
   invoices: MyString
 
 two:
-  company_id: 1
+  company: MyString
   approver: MyString
   phone: MyString
-  extension: MyString
+  project_extension: MyString
   site_city: MyString
   site_zip: MyString
   site_phone: MyString
-  start_date: 2013-04-27 22:26:49
-  end_date: 2013-04-27 22:26:49
+  start_date: 2013-05-03 23:13:18
+  end_date: 2013-05-03 23:13:18
   status: false
-  type: 
+  project_type: MyString
   project_manager: MyString
   budgeted_hours: MyString
   budgeted_expenses: MyString

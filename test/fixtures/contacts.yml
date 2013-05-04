@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  npoc: false
+  ppoc: false
   manager: false
   portal_password: MyString
   portal_security_level: 1
@@ -9,7 +9,7 @@ one:
   lastname: MyString
   title: MyString
   department: MyString
-  contact_type: MyString
+  cotact_type: MyString
   direct_phone: MyString
   contact_extension: MyString
   mobile_phone: MyString
@@ -19,26 +19,71 @@ one:
   work_email_primary: MyString
   work_email_secondary: MyString
   work_email_tertiary: MyString
-  work_email_primary: MyString
-  work_email_secondary: 
-  description: MyText
-  cost: MyString
-  price: MyString
-  manufacture: MyString
-  manufacture_part: MyString
-  serial_numbers: MyString
-  vendor_perferred: MyString
-  vendor_other: MyString
-  type: 
-  units: MyString
-  tax: MyString
-  stock_on_hand: MyString
-  stock_location: MyString
-  references_recent_orders: MyString
-  references_companies_who_own: MyString
+  personal_email_primary: MyString
+  personal_email_secondary: MyString
+  personal_email_tertiary: MyString
+  reports_to: MyString
+  primary_site: MyString
+  active_inactive: false
+  notes: MyText
+  machine_id1: MyString
+  machine_id2: MyString
+  machine_id3: MyString
+  passwords: MyString
+  cell_phone_provider: MyString
+  cell_phone_account_number: MyString
+  cell_phone_model: MyString
+  home_isp: MyString
+  homeuestion_answer: MyText
+  security_question_answer2: MyText
+  secourtiy_question_answer3: MyText
+  securtiy_question_answer4: MyText
+  security_question_answer5: MyText
+  dvr_ip: MyString
+  dvr_username: MyString
+  dvr_password: MyString
+  dvr_url: MyString
+  dvr_model: MyString
+  vendor_profile: MyString
+  vendor_profile2: MyString
+  vendor_profile3: MyString
+  vendor_profile4: MyString
+  vendor_profile5: MyString
+  place_of_birth: MyString
+  mothers_maiden_name: MyString
+  last_4_digits_of_social: MyString
+  pets_name: MyString
+  personal_credit_card: MyString
+  nickname: MyString
+  gender: MyString
+  college: MyString
+  birthday: 2013-05-03 22:54:42
+  married: false
+  children: false
+  child1: MyText
+  child2: MyText
+  significant_other: MyString
+  anniversary: 2013-05-03 22:54:42
+  photo: MyString
+  home_address1: MyString
+  home_address2: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  country: MyString
+  newsletter_opt_in: false
+  facebook: MyString
+  twitter: MyString
+  linkedin: MyString
+  instagram: MyString
+  personal_skype: MyString
+  personal_gchat: MyString
+  personal_aim: MyString
+  personal_msn: MyString
+  personal_yahoo: MyString
 
 two:
-  npoc: false
+  ppoc: false
   manager: false
   portal_password: MyString
   portal_security_level: 1
@@ -46,7 +91,7 @@ two:
   lastname: MyString
   title: MyString
   department: MyString
-  contact_type: MyString
+  cotact_type: MyString
   direct_phone: MyString
   contact_extension: MyString
   mobile_phone: MyString
@@ -56,20 +101,65 @@ two:
   work_email_primary: MyString
   work_email_secondary: MyString
   work_email_tertiary: MyString
-  work_email_primary: MyString
-  work_email_secondary: 
-  description: MyText
-  cost: MyString
-  price: MyString
-  manufacture: MyString
-  manufacture_part: MyString
-  serial_numbers: MyString
-  vendor_perferred: MyString
-  vendor_other: MyString
-  type: 
-  units: MyString
-  tax: MyString
-  stock_on_hand: MyString
-  stock_location: MyString
-  references_recent_orders: MyString
-  references_companies_who_own: MyString
+  personal_email_primary: MyString
+  personal_email_secondary: MyString
+  personal_email_tertiary: MyString
+  reports_to: MyString
+  primary_site: MyString
+  active_inactive: false
+  notes: MyText
+  machine_id1: MyString
+  machine_id2: MyString
+  machine_id3: MyString
+  passwords: MyString
+  cell_phone_provider: MyString
+  cell_phone_account_number: MyString
+  cell_phone_model: MyString
+  home_isp: MyString
+  homeuestion_answer: MyText
+  security_question_answer2: MyText
+  secourtiy_question_answer3: MyText
+  securtiy_question_answer4: MyText
+  security_question_answer5: MyText
+  dvr_ip: MyString
+  dvr_username: MyString
+  dvr_password: MyString
+  dvr_url: MyString
+  dvr_model: MyString
+  vendor_profile: MyString
+  vendor_profile2: MyString
+  vendor_profile3: MyString
+  vendor_profile4: MyString
+  vendor_profile5: MyString
+  place_of_birth: MyString
+  mothers_maiden_name: MyString
+  last_4_digits_of_social: MyString
+  pets_name: MyString
+  personal_credit_card: MyString
+  nickname: MyString
+  gender: MyString
+  college: MyString
+  birthday: 2013-05-03 22:54:42
+  married: false
+  children: false
+  child1: MyText
+  child2: MyText
+  significant_other: MyString
+  anniversary: 2013-05-03 22:54:42
+  photo: MyString
+  home_address1: MyString
+  home_address2: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  country: MyString
+  newsletter_opt_in: false
+  facebook: MyString
+  twitter: MyString
+  linkedin: MyString
+  instagram: MyString
+  personal_skype: MyString
+  personal_gchat: MyString
+  personal_aim: MyString
+  personal_msn: MyString
+  personal_yahoo: MyString
